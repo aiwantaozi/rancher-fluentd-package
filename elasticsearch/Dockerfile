@@ -15,7 +15,7 @@ RUN apk add --update --virtual .build-deps \
         fluent-plugin-elasticsearch \        
  && sudo -u fluent gem install \
  		fluentd \
-  && sudo -u fluent gem install \
+ && sudo -u fluent gem install \
  		fluentd-ui \
  && sudo -u fluent gem sources --clear-all \
  && apk del .build-deps \
