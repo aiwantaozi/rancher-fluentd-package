@@ -17,7 +17,7 @@ RUN apk add --update --virtual .build-deps \
  		fluentd \
  && sudo -u fluent gem install \
  		fluentd-ui \
- && sudo -u fluent gem sources --clear-all \
+RUN sudo -u fluent gem sources --clear-all \
  && apk del .build-deps \
  && rm -rf /var/cache/apk/* \
            /home/fluent/.gem/ruby/2.3.0/cache/*.gem
